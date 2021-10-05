@@ -8,6 +8,7 @@ import BigBox from "../Src/Components/BigBox";
 import TextBlueBorder from "../Src/Components/TextBlueBorder";
 
 export default function Home(props) {
+  const [isClicked, setIsClicked] = useState(false);
   return (
     <div className={cn("container mx-auto")}>
       <div>
@@ -42,7 +43,7 @@ export default function Home(props) {
         />
       </div>
 
-      <div>
+      <div className={cn("pt-12")}>
         <Numbers leftNumber={"1"} rightNumber={"2"} />
 
         <BigBox
@@ -56,16 +57,16 @@ export default function Home(props) {
             {
               leftNumber: "1",
               rightNumber: "2",
-              buttonName: "heyyyy",
+              buttonName: "Click Me",
               onClick: () => console.log("123"),
             },
             {
               leftNumber: "1",
               rightNumber: "2",
-              buttonName: "ahlennn",
+              buttonName: "Click",
               onClick: () =>
                 console.log(
-                  "eben 3ammi ent sutti w makhassak i za hadan se3adni fehem ???? aw lae???? "
+                  "Test Me"
                 ),
             },
           ]}
@@ -74,7 +75,11 @@ export default function Home(props) {
         <AnotherButton className={cn("")} buttonName={"Apply"} />
       </div>
 
-      <TextBlueBorder text={"Click Me"} />
+      <TextBlueBorder
+        text={"Click Me"}
+        isSelected={isClicked}
+        onClick={() => setIsClicked(true)}
+      />
     </div>
   );
 }
