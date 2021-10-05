@@ -69,7 +69,12 @@ export default function Home(props) {
           ]}
         />
 
-        <AnotherButton className={cn("")} buttonName={"Apply"} />
+        <AnotherButton
+          onClick={() => setIsClicked(true)}
+          buttonName={"Apply"}
+          isSelected={isClicked}
+          onClick={() => console.log("Applied")}
+        />
       </div>
 
       <TextBlueBorder
