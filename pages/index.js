@@ -64,10 +64,7 @@ export default function Home(props) {
               leftNumber: "1",
               rightNumber: "2",
               buttonName: "Click",
-              onClick: () =>
-                console.log(
-                  "Test Me"
-                ),
+              onClick: () => console.log("Test Me"),
             },
           ]}
         />
