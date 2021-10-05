@@ -1,7 +1,5 @@
 import React from "react";
-import cn from "classnames";
 import BoxNumberButton from "./BoxNumberButton";
-import ListItem from "./ListItem";
 
 function BigBox(props) {
   return (
