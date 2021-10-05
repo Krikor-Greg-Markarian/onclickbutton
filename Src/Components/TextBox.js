@@ -9,14 +9,14 @@ function TextBox(props) {
         onClick={props.onClickTop}
         className={cn("border-2 p-2", { "border-red-200": props.isSelected })}
       >
-        Click me{" "}
+        Click me
       </button>
       <div></div>
       <button
         onClick={props.onClickBottom}
         className={cn("border-2 p-2", { "border-green-200": props.isSelected })}
       >
-        Click me{" "}
+        Click me
       </button>
     </div>
   );
