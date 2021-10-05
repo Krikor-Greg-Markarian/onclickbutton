@@ -4,7 +4,7 @@ import cn from 'classnames'
 function AnotherButton(props) {
     return (
         <div>
-            <button onClick={props.onClick} className = {cn("border-2 p-1")}>{props.buttonName}</button>
+            <button onClick={props.onClick} className = {cn("border-2 p-1 ml-12 mt-4")}>{props.buttonName}</button>
         </div>
     )
 }
