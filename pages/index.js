@@ -103,7 +103,7 @@ export default function Home(props) {
         <Wale3a wale3a={"wale3a"} onClick={() => console.log("wale3a!!!")} />
       </div>
 
-      <div className={cn("border-2 text-center")}>
+      <div className={cn("border-2 text-center p-5")}>
         <Large
           items={[
             { bulletPoints: "Here text" },
@@ -125,7 +125,8 @@ export default function Home(props) {
         />
 
         <BoxOfAlphabetsNumbers
-          items={[{ number1: "1", number2: "2", number3: "Z" }]}
+          items={[{ number1: "1", number2: "2", number3: "Z" },{ number1: "1", number2: "2", number3: "Z" }]}
+          
         />
       </div>
     </div>
