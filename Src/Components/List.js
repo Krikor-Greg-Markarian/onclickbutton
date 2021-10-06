@@ -10,6 +10,7 @@ function List(props) {
 
         {props.items.map((item, idx) => (
           <ListItem
+          key={idx}
             text={item.text}
             buttonName={item.buttonName}
             onClick={item.onClick}

@@ -6,6 +6,7 @@ function BigBox(props) {
     <div>
       {props.items.map((item, idx) => (
         <BoxNumberButton
+          key={idx}
           leftNumber={item.leftNumber}
           rightNumber={item.rightNumber}
           buttonName={item.buttonName}
